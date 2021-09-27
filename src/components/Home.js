@@ -1,7 +1,9 @@
+import NextLaunch from "./NextLaunch"
+
 function Home() {
     return (
         <div>
-            Home
+            <NextLaunch />
         </div>
     )
 }
