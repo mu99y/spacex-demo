@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import moment from "moment";
 import TableContainer from "@mui/material/TableContainer";
 import Table from "@mui/material/Table";
 import TableHead from "@mui/material/TableHead";
@@ -24,7 +25,7 @@ const UpComing = () => {
             return (
               <TableRow>
                 <TableCell>{launchpad.name}</TableCell>
-                <TableCell>{launchpad.date_local}</TableCell>
+                <TableCell>{moment(launchpad.date_local).format('MMMM Do YYYY, h:mm:ss a')}</TableCell>
                 <TableCell>{launchpad.launchpad}</TableCell>
               </TableRow>
             );
