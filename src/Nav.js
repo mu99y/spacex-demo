@@ -1,17 +1,22 @@
+import { TableRow, TableCell, TableContainer, TableHead } from "@mui/material";
 import { Link } from "react-router-dom";
 function Nav() {
-    return (
-        <nav>
-          <ul>
-            <li>
+  return (
+    <nav>
+      <TableContainer>
+        <TableHead>
+          <TableRow>
+            <TableCell>
               <Link to="/">Home</Link>
-            </li>
-            <li>
+            </TableCell>
+            <TableCell>
               <Link to="/upcoming">Next launch</Link>
-            </li>
-          </ul>
-        </nav>
-    )
+            </TableCell>
+          </TableRow>
+        </TableHead>
+      </TableContainer>
+    </nav>
+  );
 }
 
-export default Nav
+export default Nav;

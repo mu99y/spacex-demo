@@ -1,11 +1,22 @@
+import { TableRow, TableCell, TableContainer, TableBody } from "@mui/material";
 import Counter from "./Counter";
 
 const NextLaunch = ({ nextLaunch }) => {
   return (
-    <div>
-      Next Launch : <span>{nextLaunch.name}</span>
-      <Counter launch={nextLaunch.date_unix} />
-    </div>
+    <TableContainer>
+      <TableBody>
+        <TableRow>
+          <TableCell>
+            Next Launch : <span>{nextLaunch.name}</span>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>
+            <Counter launch={nextLaunch.date_unix} />
+          </TableCell>
+        </TableRow>
+      </TableBody>
+    </TableContainer>
   );
 };
 
