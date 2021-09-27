@@ -1,10 +1,10 @@
 import Counter from "./Counter";
 
-const NextLaunch = () => {
+const NextLaunch = ({ nextLaunch }) => {
   return (
     <div>
-      Next Launch : <span>Starlink</span>
-      <Counter />
+      Next Launch : <span>{nextLaunch.name}</span>
+      <Counter launch={nextLaunch.date_unix} />
     </div>
   );
 };
