@@ -1,9 +1,9 @@
 function App() {
-  return (
-    <div>
-      <h1>Welcome</h1>
-    </div>
-  );
+return (
+  <>
+    Welcome to spaceX
+  </>
+);
 }
 
 export default App;
